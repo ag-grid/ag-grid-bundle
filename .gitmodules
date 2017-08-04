@@ -29,7 +29,7 @@
 [submodule "ag-grid-aurelia"]
 	path = ag-grid-aurelia
 	url = https://github.com/ag-grid/ag-grid-aurelia.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-enterprise-mysql-example"]
 	path = ag-grid-enterprise-mysql-example
 	url = https://github.com/ag-grid/ag-grid-enterprise-mysql-example.git
@@ -37,7 +37,7 @@
 [submodule "ag-grid-react-example"]
 	path = ag-grid-react-example
 	url = https://github.com/ag-grid/ag-grid-react-example.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-polymer-example"]
 	path = ag-grid-polymer-example
 	url = https://github.com/ag-grid/ag-grid-polymer-example.git
@@ -45,7 +45,7 @@
 [submodule "ag-grid-angular"]
 	path = ag-grid-angular
 	url = https://github.com/ag-grid/ag-grid-angular.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-vue-example"]
 	path = ag-grid-vue-example
 	url = https://github.com/ag-grid/ag-grid-vue-example.git
@@ -53,7 +53,7 @@
 [submodule "ag-grid-react"]
 	path = ag-grid-react
 	url = https://github.com/ag-grid/ag-grid-react.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-aurelia-example"]
 	path = ag-grid-aurelia-example
 	url = https://github.com/ag-grid/ag-grid-aurelia-example.git
@@ -65,11 +65,11 @@
 [submodule "ag-grid-angular-example"]
 	path = ag-grid-angular-example
 	url = https://github.com/ag-grid/ag-grid-angular-example.git
-	branch = master
+	branch = latest
 [submodule "ag-grid"]
 	path = ag-grid
 	url = https://github.com/ag-grid/ag-grid.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-webcomponent-example"]
 	path = ag-grid-webcomponent-example
 	url = https://github.com/ag-grid/ag-grid-webcomponent-example.git
@@ -81,4 +81,4 @@
 [submodule "ag-grid-docs"]
 	path = ag-grid-docs
 	url = https://github.com/ag-grid/ag-grid-docs.git
-	branch = master
+	branch = latest

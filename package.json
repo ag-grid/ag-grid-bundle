@@ -1,0 +1,23 @@
+{
+  "name": "ag",
+  "version": "1.0.0",
+  "description": "The mother of repos, providing snapshots and utilities for orchestrating the rest of the repositories in the [ag-Grid](https://github.com/ag-grid/) org.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ag-grid/ag-grid-bundle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ag-grid/ag-grid-bundle/issues"
+  },
+  "homepage": "https://github.com/ag-grid/ag-grid-bundle#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

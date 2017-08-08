@@ -17,7 +17,7 @@
 [submodule "ag-grid-dev"]
 	path = ag-grid-dev
 	url = https://github.com/ag-grid/ag-grid-dev.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-angular-seed"]
 	path = ag-grid-angular-seed
 	url = https://github.com/ag-grid/ag-grid-angular-seed.git

@@ -61,7 +61,7 @@
 [submodule "ag-grid-enterprise"]
 	path = ag-grid-enterprise
 	url = https://github.com/ag-grid/ag-grid-enterprise.git
-	branch = master
+	branch = latest
 [submodule "ag-grid-angular-example"]
 	path = ag-grid-angular-example
 	url = https://github.com/ag-grid/ag-grid-angular-example.git

@@ -3,10 +3,10 @@ const cp = require('child_process');
 
 gulp.task('start-docs', cb => {
     const env = {
-        GRID_SCRIPT_PATH: 'http://localhost:9999/bundle.js'
+        GRID_SCRIPT_PATH: 'http://192.168.0.100:9999/bundle.js'
     };
 
-    const php = cp.spawn('php', ['-S', 'localhost:8080', '-t', 'ag-grid-docs/src'], { stdio: 'inherit', env: env });
+    const php = cp.spawn('php', ['-S', '0.0.0.0:8080', '-t', 'ag-grid-docs/src'], { stdio: 'inherit', env: env });
 
     const gulp = cp.spawn('./node_modules/.bin/webpack-dev-server', ['--config', './webpack-docs.config.js'], { stdio: 'inherit' } );
 

@@ -4,14 +4,36 @@ The mother of repos, providing snapshots and utilities for orchestrating the res
 
 ## Usage
 
-Clone the repo with the submodules flag: 
+Clone the repo
 
 ```sh
-git clone --recurse-submodules https://github.com/ag-grid/ag-grid-bundle.git 
+git clone https://github.com/ag-grid/ag-grid-bundle.git 
 ```
 
-alternatively, if you did not do that, initialize the submodules afterwards
+Currently, only the `latest` branch is functional. 
 
 ```sh
-git submodule update --init
+git checkout latest
 ```
+
+Update the submodules:
+
+```sh
+git submodule update --init --remote
+```
+
+Afterwards, run
+
+```sh
+npm install
+```
+
+### Tasks
+
+`start-docs` launches a webpack dev server with HMR and ts-loader optimizations enabled. Right now, only the main example is loading from it.
+
+```
+gulp start-docs 
+```
+
+Afterwards, open `http://localhost:8080` in your browser. Any change in the source should be reflected faster than the current setup. 

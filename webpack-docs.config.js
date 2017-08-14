@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 
@@ -10,7 +11,7 @@ module.exports = {
         filename: 'bundle.js',
         library: ["agGrid"],
         libraryTarget: "umd",
-        publicPath: "http://localhost:9999/"
+        publicPath: "http://192.168.0.100:9999/"
     },
     resolve: {
         alias: {
@@ -21,12 +22,22 @@ module.exports = {
     },
     module: {
         rules: [ 
-            { test: /\.tsx?$/, use: {
-                loader: 'ts-loader',
-                options: {
-                    configFileName: './ag-grid/tsconfig-exports.json'
+            { test: /\.tsx?$/, use: [
+                { loader: 'cache-loader' },
+                {
+                    loader: 'thread-loader',
+                    options: {
+                        workers: require('os').cpus().length - 1,
+                    },
+                },
+                {
+                    loader: 'ts-loader',
+                    options: {
+                        happyPackMode: true,
+                        configFileName: './ag-grid/tsconfig-exports.json'
+                    }
                 }
-            }},
+            ]},
             {
                 test: /\.scss$/,
                 use: [
@@ -53,6 +64,7 @@ module.exports = {
     devServer: {
         hot: true,
         port: 9999,
+        host: '0.0.0.0',
         stats: "minimal",
         headers: {
             "Access-Control-Allow-Origin": "*",
@@ -63,6 +75,7 @@ module.exports = {
     plugins: [
         // new ExtractTextPlugin('styles.css'),
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new ForkTsCheckerWebpackPlugin({ tsconfig: './ag-grid/tsconfig-exports.json' })
     ]
 }

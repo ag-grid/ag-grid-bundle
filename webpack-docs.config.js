@@ -11,7 +11,7 @@ module.exports = {
         filename: 'bundle.js',
         library: ["agGrid"],
         libraryTarget: "umd",
-        publicPath: "http://192.168.0.100:9999/"
+        publicPath: "http://0.0.0.0:9999/"
     },
     resolve: {
         alias: {

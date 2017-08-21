@@ -3,7 +3,7 @@ const cp = require('child_process');
 
 gulp.task('start-docs', cb => {
     const env = {
-        GRID_SCRIPT_PATH: 'http://192.168.0.100:9999/bundle.js'
+        GRID_SCRIPT_PATH: 'http://0.0.0.0:9999/bundle.js'
     };
 
     const php = cp.spawn('php', ['-S', '0.0.0.0:8080', '-t', 'ag-grid-docs/src'], { stdio: 'inherit', env: env });

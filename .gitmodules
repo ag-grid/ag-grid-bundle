@@ -82,3 +82,6 @@
 	path = ag-grid-docs
 	url = https://github.com/ag-grid/ag-grid-docs.git
 	branch = latest
+[submodule "ag-grid-material"]
+	path = ag-grid-material
+	url = https://github.com/ag-grid/ag-grid-material.git
